@@ -12,7 +12,7 @@
     {
         "tag": "casual_feeling",
         "patterns": ["how are you?", "how you feeling?", "are you good?", "howzit"],
-        "responses": []
+        "responses": ["I am good thanks!", "I am well!"]
     },
     {
         "tag": "name",
