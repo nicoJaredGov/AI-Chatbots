@@ -1,5 +1,6 @@
 import discord
 import responses
+import json
 
 async def send_message(message, user_message, is_private):
     try:
@@ -9,7 +10,7 @@ async def send_message(message, user_message, is_private):
         print(e)
 
 def run_discord_bot():
-    TOKEN = 'MTA5NDY2MjMzNjExNzIzMTY4OQ.Gh5Xss.Rc9OGczMCV7tGm52-9CFFSotJ4sZ-h5DxvW-bI'
+    TOKEN = json.loads(open('../private-information/discord-bots.json').read())['bots'][0]['token']
     client = discord.Client()
 
     @client.event
