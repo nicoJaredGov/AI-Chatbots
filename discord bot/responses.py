@@ -1,3 +1,5 @@
+import chatbot
+
 def handle_response(message) -> str:
     p_message = message.lower()
 
@@ -6,3 +8,6 @@ def handle_response(message) -> str:
     
     if p_message == 'tristan':
         return 'Tristan is a marie'
+    
+    else:
+        return chatbot.respond(p_message)
